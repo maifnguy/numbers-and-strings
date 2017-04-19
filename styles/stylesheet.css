@@ -1,0 +1,32 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+html {
+  font-size: 100%; 
+}
+h1 {
+  line-height: 3rem;
+  color: darksalmon;
+}
+input {
+  display: block;
+}
+table, form {
+  margin: 0 1rem;
+  padding: 0.5rem;
+  line-height: 1.5rem;
+}
+table th {
+  line-height: 2rem;
+  font-size: 120%;
+  text-align: left;
+  color: darkkhaki;
+}
+table td {
+  padding: 0.2rem;
+}
+.underline {
+  text-decoration: underline;
+}
