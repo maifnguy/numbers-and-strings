@@ -2,10 +2,9 @@ $(function() {
  
 var textBox = [];
   
-  
 $('#myForm').on('submit', function(){
   
-  // adds to numbers and text to 'inputs' array
+  // adds numbers and text to array
   textBox.push($('#myForm :input').val()); 
   console.log(JSON.stringify(textBox));
   
@@ -14,8 +13,7 @@ $('#myForm').on('submit', function(){
   for (var i = 0; i < textBox.length; i++){
     sum += parseFloat(textBox[i]);
   }
-  
-  
+    
   // gets the count, sum and avg if input is a number
   if ($.isNumeric($('#myForm :input').val())) {
     $('#count').text(textBox.length);
@@ -28,13 +26,13 @@ $('#myForm').on('submit', function(){
       $('#concatenate').text(textBox.join(' '));
 }; 
   
-    // clears the form once submitted
-$('#myForm :input').val("");
+  // clears the form once submitted
+  $('#myForm :input').val("");
     return false;
+    });
   });
-});
     
-
+// reloads page with reset button 
 $('#reset').click(function() {
     location.reload();
   });
